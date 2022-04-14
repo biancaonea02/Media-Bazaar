@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-color: #301b3f;
+  height: 100%;
+  overflow: auto;
+}
+/* PROFILE PAGE PART */
+
+.profile-page{
+  margin-top: 370px;
+  padding: 0px;
+  background: #301b3f;
+  font-family: arial;
+  box-sizing: border-box;
+
+}
+
+.card-container{
+  width: 400px;
+  height: 450px;
+  background: #FFF;
+  border-radius: 6px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 10px 1px #000;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upper-container{
+  height: 150px;
+  background: #907FA4;
+}
+
+.image-container{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 0px;
+  transform: translate(108px, 100px);
+  padding-left: 50px;
+}
+
+.image-container img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.lower-container{
+  height: 280px;
+  background: #FFF;
+  padding: 20px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.lower-container h3, h4{
+  box-sizing: border-box;
+  line-height: .6;
+  font-weight: lighter;
+}
+
+.lower-container h4{
+  color: #7F00FF;
+  opacity: .6;
+  font-weight: bold;
+}
+
+.lower-container .btn{
+  padding: 12px 20px;
+  background: #7F00FF;
+  border: none;
+  color: white;
+  border-radius:  30px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition:  all .3s ease-in;
+}
+
+.lower-container .btn:hover{
+  background: transparent;
+  color: #7F00FF;
+  border: 2px solid #7F00FF;
+}
+
+/* END OF PROFILE PAGE PART */
+
+/* HEADER NAVIGATION BAR */
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background-color: black;
+}
+header.sticky{
+  background: white;
+  padding: 10px 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+header .logo{
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+}
+header.sticky .logo{
+  color: black;
+}
+header .logo span{
+  color:#6f4a8e;
+}
+header .navigation{
+  position: relative;
+  display: flex;
+}
+header .navigation li{
+  list-style: none;
+  margin-left: 30px;
+}
+header .navigation li a {
+  text-decoration: none;
+  color: #7F00FF ;
+  font-weight: 400;
+}
+header.sticky .navigation li a {
+  color: #440a67;
+}
+header .navigation li a:hover{
+  color: #845ec2;
+}
+header .navigation li a.logout{
+  color: red;
+}
+
+@media (max-width: 991px) {
+  header, header.sticky{
+    padding: 10px 20px;
+  }
+  header .navigation{
+    display: none;
+  }
+  header .navigation.active{
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255,255,255, 0.9);
+  }
+  header .navigation li{
+    margin-left: 0;
+  }
+    header .navigation li a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+  .menuToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menuToggle.active{
+    background: url(../images/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header.sticky .menuToggle{
+    filter: invert(1);
+  }
+}
+
+/* EMPLOYEE MANAGMENT PAGE START */
+.table-emp{
+  margin: 10% 10%;
+}
+.table-emp th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #7F00FF;
+  color: white;
+}
+.table-emp td, .table-emp th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.table-emp td{
+  background-color: white;
+}
+
+
+/* EMPLOYEE MANAGMENT PAGE END */
+
+/* CSS for main content on the home page */
+.greeting
+{
+  padding-left: 200px;
+  font-size: 17px;
+}
+
+.main-content-home{
+  background-color: #dddddd;
+  padding: 5% 0% 16% 0%;
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 9px;
+}
+.col-4-home{
+  width: 18%;
+  background-color:white;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+  margin-left: 20px;
+}
+.text-center{
+  text-align: center;
+}
+.wrapper-home{
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+}
+

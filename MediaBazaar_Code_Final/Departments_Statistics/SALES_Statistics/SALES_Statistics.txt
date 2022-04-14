@@ -1,0 +1,3 @@
+Name: SALES
+Employees:  Bella Avery, Jane Doe
+Number of required personel: 20

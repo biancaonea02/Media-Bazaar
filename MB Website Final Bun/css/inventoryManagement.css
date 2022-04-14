@@ -1,0 +1,20 @@
+/*CSS for inventory manager page by Ante Cetinic Franulovic*/
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3742fa;
+    color: white;
+}
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+
+.updateForm{
+ background-color: lightgray;
+ width: 25%;
+ margin: auto;
+}
+
